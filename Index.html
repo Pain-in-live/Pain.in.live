@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>pain.in.live.de – Deine Sorgen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #222;
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 15px rgba(255, 0, 80, 0.4);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #ff0055;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 6px;
+      background: #333;
+      color: #fff;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      background-color: #ff0055;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e6004d;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>pain.in.live.de</h1>
+    <p>Schreib anonym, was dich belastet. Ich lese jede Nachricht und melde mich bei dir persönlich.</p>
+
+    <form action="https://formsubmit.co/shadow-phantom666@proton.me" method="POST">
+      <!-- Optionen -->
+      <input type="hidden" name="_subject" value="Neue Nachricht über pain.in.live.de">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Felder -->
+      <label for="vorname">Vorname</label>
+      <input type="text" id="vorname" name="Vorname" required>
+
+      <label for="alter">Alter (freiwillig)</label>
+      <input type="text" id="alter" name="Alter">
+
+      <label for="geschlecht">Geschlecht (freiwillig)</label>
+      <select id="geschlecht" name="Geschlecht">
+        <option value="">Keine Angabe</option>
+        <option value="männlich">Männlich</option>
+        <option value="weiblich">Weiblich</option>
+        <option value="divers">Divers</option>
+      </select>
+
+      <label for="tiktok">TikTok Name (Pflicht)</label>
+      <input type="text" id="tiktok" name="TikTok" required>
+
+      <label for="anliegen">Was liegt dir auf dem Herzen?</label>
+      <textarea id="anliegen" name="Anliegen" rows="5" required></textarea>
+
+      <input type="submit" value="Senden">
+    </form>
+  </div>
+</body>
+</html>
